@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+<script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+<meta charset="UTF-8"> 
+<title>basak-tms</title>
+<link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Kanit:wght@700&family=Montserrat:wght@200;300;400;500;600;700&family=Play:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+
+<body> 
+
+    <div class="headerTop" id="top">
+        <div class="mail">
+            <div class="mailHref">
+                <img src="pictures/mail.svg">
+                <a href="mailto:A.LOPATKIN@TMSC.RU" target="_blank">A.LOPATKIN@TMSC.RU</a>
+            </div>
+            <span>|</span>
+            <div  class="mailHref">
+                <img src="pictures/mail.svg">
+                <a href="mailto:TMS.KIROV@TMSC.RU" target="_blank">TMS.KIROV@TMSC.RU</a>
+            </div>
+            <span>|</span>
+            <div  class="mailHref">
+                <img src="pictures/phone.svg">
+                <a href="tel:25 43 53" value="+380800303505" target="_blank" > 8 (8332) 25-43-53</a>
+            </div>
+        </div>
+        <div class="socialMedia">
+            <div class="tg">
+                <img src="pictures/tg.svg">
+            </div>
+            <div class="youtube">
+                <img src="pictures/youtube.svg">
+            </div>
+            <div class="vk" >
+                <img src="pictures/vk.svg">
+            </div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class = "headerBottom" id="headerMain">
+            <div class="basakContainer">
+                <img class="basakMainLogo" src="pictures/BasakLogoWhite.png" onclick="location.href='index.html'">
+            </div>
+            
+
+            <nav class="navigation">
+                <ul>
+                    <li class="mainNav" onclick="location.href='index.html'">
+                        Главная
+                    </li>
+    
+                    <li class="aboutNav">
+                        О компании
+                    </li>
+                    <li class="modelsNav" >
+                        <div class="subMenu">
+                            <ul>
+                                <li  onclick="location.href='2060BT.html'">
+                                    <img src="pictures/2060-BTmini.png">
+                                    2060 BT
+                                </li>
+                                <li onclick="location.href='2075BT.html'">
+                                    <img src="pictures/2075-BTmini.png">
+                                    2075 BT
+                                </li>
+                                <li onclick="location.href='2090s.html'">
+                                    <img src="pictures/2090-Smini.png" >
+                                    2090 S
+                                </li>
+                                <li onclick="location.href='2105s.html'">
+                                    <img src="pictures/2105-Smini.png" >
+                                    2105 S
+                                </li>
+                                <li onclick="location.href='2110s.html'">
+                                    <img src="pictures/2110-Smini.png" >
+                                    2110 S
+                                </li>
+                                <li onclick="location.href='5120.html'">
+                                    <img src="pictures/5120mini.png" >
+                                    5120
+                                </li>
+                            </ul>
+                        </div>
+                        Модельный ряд
+                    </li>
+                    <li class="newsNav">
+                        Новости
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="tmsContainer">
+                <img class="tmsMainLogo" src="pictures/tms_logo.png"  onclick="location.href='http:/tmsc.ru'">
+            </div>
+
+            <div class="burgerWrapper">
+                <div class="menu-burger__header">
+                    <span></span>
+                </div>
+            </div>
+            
+        </div>
+       
+       
+    </header>
+
+    <main>
+
+        <section id="sliderViewport" class="sliderViewport">
+            <div class="sliderWrapper">
+                <ul id="slides" class="slides">
+                    <li><img class="slide slide1" src="pictures/supCool.jpg" alt="Basak tractor"></li>
+                    <li><img class="slide slide1" src="pictures/basakTractor.jpg" alt="Basak tractor"></li>
+                    <li><img class="slide slide1" src="pictures/cool2.png" alt="Basak tractor"></li>
+                    <li><img class="slide slide1" src="pictures/cool.jpg" alt="Basak tractor"></li>
+                    <li><img class="slide slide1" src="pictures/basak-tractor.jpg" alt="Basak 5120"></li>
+                    <li><img class="slide slide1" src="pictures/5120tractor.jpg" alt="Basak tractor"></li>
+                </ul>
+            </div>
+
+            <div class="arrowContainer arrowContainer1" id="next" onclick="nextSlide()">
+                <img class="arrow arrow1" src="pictures/arrow1.png" alt="стреклка вправо">
+            </div>
+
+            <div class="arrowContainer arrowContainer2" id="prev" onclick="previousSlide()">
+                <img class="arrow arrow2" src="pictures/arrow2.png" alt="стрелка влево">
+            </div>
+
+        </section>
+
+
+        <section class="lineSlides">
+            <div class="smallSlider">
+                <div id="viewport">
+                    <ul id="slidewrapper">
+                        <li class="sslide"><img src="pictures/model1.png" alt="1" class="slide-img" onclick="location.href='5120.html'"></li>
+                        <li class="sslide"><img src="pictures/model2.png" alt="2" class="slide-img" onclick="location.href='2105s.html'"></li>
+                        <li class="sslide"><img src="pictures/model3.png" alt="3" class="slide-img" onclick="location.href='2090s.html'"></li>
+                        <li class="sslide"><img src="pictures/model4.png" alt="4" class="slide-img" onclick="location.href='2110s.html'"></li>
+                        <li class="sslide"><img src="pictures/model5.png" alt="5" class="slide-img" onclick="location.href='2075BT.html'"></li>
+                        <li class="sslide"><img src="pictures/model6.png" alt="6" class="slide-img" onclick="location.href='2060BT'"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="smallArrowContainer smallArrowContainer1" id="smallNext">
+                <img class="arrow smallAarrow1" src="pictures/arrow1.png" alt="стреклка вправо">
+            </div>
+
+            <div class="smallArrowContainer smallArrowContainer2" id="smallPrev">
+                <img class="arrow smallArrow2" src="pictures/arrow2.png" alt="стрелка влево">
+            </div>
+        </section>
+        
+        <section class="someContent">
+            <div class="advWrapper">
+                <div class="adv adv1" onclick="location.href='files/catalog.pdf'">
+                    <img src="pictures/logoGear.png">
+                    <span class="advText">
+                        <h3>ТУРЕЦКАЯ РАЗРАБОТКА<br>
+                        <span>
+                            Basak - гордость туцрецкой инженерии
+                        </span>
+                    </span>
+                </div>
+                <div class="adv adv1" onclick="location.href='files/catalog.pdf'">
+                    <img src="pictures/logoGear.png">
+                    <span class="advText">
+                        <h3>ШИРОКАЯ ДИЛЕРСКАЯ СЕТЬ<br>
+                        <span>
+                            Самый массовый бренд в Турции
+                        </span>
+                    </span>
+                </div>
+                <div class="adv adv1" onclick="location.href='files/catalog.pdf'">
+                    <img src="pictures/logoGear.png">
+                    <span class="advText">
+                        <h3>НА 4 КОНТИНЕНТАХ<br>
+                        <span>
+                            Комапания с более чем 100 летним стажем
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="crossLineWrapper">
+            <span class="crossLine">
+            </span>
+        </section>
+
+        <section class="videoContent">
+            <div class="videoWrapper">
+                <video controls poster="pictures/basak-tractor.jpg">
+                    <source src="videos/Basak-Fabrika-New.mp4">
+                </video>
+                <article>
+                    <p class="year">Фильм 2020 года</p>
+                    <h2>Тракторам Basak 108 лет
+                    <p class="com">
+                        Техничность, мощность и комфорт нового BASAK 5120 достигнуты благодрая многолетнему опыту турецких инженеров
+                    </p>
+                    <ul class="puncts">
+                        <li>
+                            <b>1914</b> - Комапания основана под названием DA-TA Demir Araba
+                        </li>
+                        <li>
+                            <b>1968</b> - В Адапазары прозводство стало на 65% турецким 
+                        </li>
+                        <li>
+                            <b>1976</b> - Основание бренда STEYR
+                        </li>
+                        <li>
+                            <b>1996</b> - Старт производства под брендом BASAK
+                        </li>
+                        <li>
+                            <b>2012</b> - Присоединение BASAK к группе SANKO
+                        </li>
+                        <li class="lastArtLi" onclick="location.href='5120.html'">
+                            узнать больше+
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="crossLineWrapper">
+            <span class="crossLine2">
+            </span>
+        </section>
+
+        <section class="gif" id="gif">
+            <img src="pictures/tractor.gif">
+        </section>
+
+        <section class="models" id="models">
+            <h4 class="modelsH">
+                МОДЕЛЬНЫЙ РЯД
+            </h4>
+            <h3 class="fieldH">
+                Тракторы Basak
+            </h3>
+
+            <div class="tractorsWrapper">
+                <div class="tractors">
+                    <div class="tractorWrapper" onclick="location.href='2060BT.html'">
+                        <div>
+                            <img class="mainPhoto" src="pictures/2060BT.png">
+                            <img class="modelPhoto" src="pictures/2060BT-Basak.png">
+                            <span class="description">Технологичность, мощность и комфорт. Турецкое производство.</span>
+                            <span class="more">подробнее+</span>
+                        </div>
+                    </div>
+
+                    <div class="tractorWrapper" onclick="location.href='2075BT.html'">
+                        <div>
+                            <img class="mainPhoto" src="pictures/2075.png">
+                            <img class="modelPhoto" src="pictures/2075BT-Basak.png">
+                            <span class="description">Технологичность, мощность и комфорт. Турецкое производство.</span>
+                            <span class="more">подробнее+</span>
+                        </div>
+                    </div>
+
+                    <div class="tractorWrapper" onclick="location.href='2090s.html'">
+                        <div>
+                            <img class="mainPhoto" src="pictures/2090s.png">
+                            <img class="modelPhoto" src="pictures/2090S-Basak.png">
+                            <span class="description">Технологичность, мощность и комфорт. Турецкое производство.</span>
+                            <span class="more">подробнее+</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tractorWrapper" onclick="location.href='2105s.html'">
+                        <div>
+                            <img class="mainPhoto" src="pictures/21055.png">
+                            <img class="modelPhoto" src="pictures/2105s-Basak.png">
+                            <span class="description">Технологичность, мощность и комфорт. Турецкое производство.</span>
+                            <span class="more">подробнее+</span>
+                        </div>
+                    </div>
+
+                    <div class="tractorWrapper" onclick="location.href='2110s.html'">
+                        <div>
+                            <img class="mainPhoto" src="pictures/21105.png">
+                            <img class="modelPhoto" src="pictures/2110S-Basak.png">
+                            <span class="description">Технологичность, мощность и комфорт. Турецкое производство.</span>
+                            <span class="more">подробнее+</span>
+                        </div>
+                    </div>
+
+                    <div class="tractorWrapper" onclick="location.href='5120.html'">
+                        <div>
+                            <img class="mainPhoto" src="pictures/5120.png">
+                            <img class="modelPhoto" src="pictures/5120-Basak.png">
+                            <span class="description">Технологичность, мощность и комфорт. Турецкое производство.</span>
+                            <span class="more">подробнее+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="contact">
+            <div class="contactWrapper">
+                <span>
+                    Заполните форму обратной связи!
+                </span>
+                <button onclick="location.href='form.html'">
+                    cвязаться
+                </button>
+            </div>
+        </section>
+
+        <section class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab353dd92397e717f9df02b25c9b718600deb5abd8e4b790e07be7ece12b22f62&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footerContent">
+            <div class="logos">
+                <img class="basakFooterLogo" src="pictures/Basak-Traktor-Logo-Red.png">
+            </div>
+            
+            <div class="adressesWrapper">
+                <h6>Наши адреса</h6>
+                <div>
+                    <p>г. Москва, Проспект Мира, д.186, корпус 1, офис 16<br>
+                    <b>Тел: 8 (499) 673-08-00</b></p>
+                </div>
+
+                <div>
+                    <p>Кировская область, г. Киров, ул. Производственная, 48<br>
+                        <b>Тел: 8 (8332) 25-43-53</b></p>
+                </div>
+
+                <div>
+                    <p>Удмуртская республика, г. Ижевск, Воткинское шоссе, д. 200<br>
+                    <b>Тел: 8 (3412) 77-18-55</b>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="footerLinks">
+                <h6>Ссылки</h6>
+                <div>
+                    <ul>
+                        <li onclick="location.href=''">
+                            О компании
+                        </li>
+                        <li onclick="location.href='2060BT.html'">
+                            2060 BT
+                        </li>
+                        <li onclick="location.href='2075BT.html'">
+                            2075 BT
+                        </li>
+                        <li onclick="location.href='2090s.html'">
+                            2090 S
+                        </li>
+                        <li onclick="location.href='2105s.html'">
+                            2105 S
+                        </li>
+                        <li onclick="location.href='2110s.html'">
+                            2110 S
+                        </li>
+                        <li onclick="location.href='5120.html'">
+                            5120
+                        </li>
+                    </ul>
+                </div>
+                <div class="socialMedia">
+                    <div class="tg">
+                        <img src="pictures/tg.svg">
+                    </div>
+                    <div class="youtube">
+                        <img src="pictures/youtube.svg">
+                    </div>
+                    <div class="vk" >
+                        <img src="pictures/vk.svg">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="logos" onclick="location.href='http:/tmsc.ru'">
+                <img class="tmsFooterLogo" src="pictures/tms_logo.png">
+            </div>
+                
+        </div>
+    </footer>
+
+    <script src="js/scroller.js"></script> 
+    <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/scrollArrear.js"></script>
+    <script src="js/sliderMini.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+
+</html>
