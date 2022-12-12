@@ -1,7 +1,7 @@
 var slideNow = 1;
 var slideCount = $('#slidewrapper').children().length;
 var translateWidth = 0;
-var slideInterval = 15000;
+var slideInterval = 6000;
 
 function nextSlideSmall() {
     if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
