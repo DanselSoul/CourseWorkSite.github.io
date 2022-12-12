@@ -865,6 +865,10 @@ h6{
     .videoWrapper article{
         padding-left: 50px;
     }
+
+    .tractors{
+        justify-content: space-around;
+    }
 }
 
 @media(max-width: 900px){
