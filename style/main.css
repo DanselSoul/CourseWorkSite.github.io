@@ -639,7 +639,7 @@ header{
 .models{
     /* display: none; */
     max-width: 1380px;
-    /* margin: auto; */
+    margin: auto;
     padding-top: 10px;
 }
 
