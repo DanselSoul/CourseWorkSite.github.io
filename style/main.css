@@ -1095,17 +1095,17 @@ h6{
 }
 
 @media(max-width: 600px){
-    #viewport{
-        
-    }
+
     .videoContent video{
-        width: 440px;
+        width: 350px;
         height:auto;
     }
+
     .videoWrapper{
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 10%;
+        margin-right: 10%;
     }
+    
     #viewport img{
         width:450px;
     }
