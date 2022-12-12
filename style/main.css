@@ -360,6 +360,7 @@ header{
 }
 
 .lineSlides{
+    overflow: hidden;
     position: relative;
 }
 
@@ -638,7 +639,8 @@ header{
 .models{
     /* display: none; */
     max-width: 1380px;
-    margin: auto;
+    /* margin: auto; */
+    padding-top: 10px;
 }
 
 .modelsH{
@@ -857,6 +859,9 @@ h6{
 
 
 @media (max-width: 1310px){
+    .models{
+        padding-top: 20px;
+    }
     .videoContent video{
         width: 450px;
         height:auto;
@@ -872,6 +877,10 @@ h6{
 }
 
 @media(max-width: 900px){
+
+    .models{
+        padding-top: 40px;
+    }
 
     .burgerWrapper{
         display: block;
@@ -1002,6 +1011,8 @@ h6{
     }
 
     .videoWrapper{
+        margin-left: 20%;
+        margin-right: 20%;
         display: block;
         text-align: left;
     }
@@ -1053,6 +1064,10 @@ h6{
 
 @media(max-width: 775px){
 
+    .videoWrapper{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     .sliderWrapper{
         height: 350px;
     }
@@ -1080,6 +1095,17 @@ h6{
 }
 
 @media(max-width: 600px){
+    #viewport{
+        
+    }
+    .videoContent video{
+        width: 440px;
+        height:auto;
+    }
+    .videoWrapper{
+        margin-left: 0;
+        margin-right: 0;
+    }
     #viewport img{
         width:450px;
     }
