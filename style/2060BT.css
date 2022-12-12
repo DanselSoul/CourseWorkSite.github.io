@@ -47,9 +47,10 @@ h1:before{
 }
 
 .specWrapper img{
-    max-width: 100%;
-    max-height: 600px;
+    max-width: 600px;
+    max-height: 100%;
     margin-bottom: 30px;
+    margin: auto;
 }
 
 .specContent{
@@ -165,8 +166,23 @@ h1:before{
 @media(max-width: 1330px){
 
     .specContent .visible{
-        padding: 15px 150px 15px 20px;
+        padding: 15px 500px 15px 20px;
     }
+
+    .specWrapper{
+        flex-direction: column;
+    }
+
+    /* .specContent .visible{
+        /* padding: 15px 150px 15px 20px;
+    } */ */
+
+    .specWrapper img{
+        max-width: 600px;
+        height: auto;
+        margin: auto;
+    }
+
 
 }
 
