@@ -19,12 +19,12 @@ function nextSlideSmall() {
 }
 
 $(document).ready(function () {
-    setInterval(nextSlide, 8000);
+    setInterval(nextSlideSmall, 8000);
 
     $('#viewport').hover(function(){
         clearTimeout(changer);
     },function() {
-        changer = setInterval(nextSlide, 8000);
+        changer = setInterval(nextSlideSmall, 8000);
     });
 });
 
