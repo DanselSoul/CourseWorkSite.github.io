@@ -1,7 +1,7 @@
 var slideNow = 1;
 var slideCount = $('#slidewrapper').children().length;
 var translateWidth = 0;
-var slideInterval = 6000;
+var slideInterval = 8000;
 
 function nextSlideSmall() {
     if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
@@ -19,12 +19,12 @@ function nextSlideSmall() {
 }
 
 $(document).ready(function () {
-    setInterval(nextSlide, slideInterval);
+    setInterval(nextSlide, 8000);
 
     $('#viewport').hover(function(){
-        clearInterval(switchInterval);
+        clearTimeout(changer);
     },function() {
-        switchInterval = setInterval(nextSlide, slideInterval);
+        changer = setInterval(nextSlide, 8000);
     });
 });
 
