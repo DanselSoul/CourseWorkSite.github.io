@@ -1,10 +1,10 @@
 
 $('.modelsNav').bind({
-    touchstart: function(e){ 
-        e.stopPropagation();
+    // touchstart: function(e){ 
+    //     e.stopPropagation(); //для смартфонов
         
-            $('.subMenu').slideDown('fast');
-    },
+    //         $('.subMenu').slideDown('fast');
+    // },
     mouseenter: function(){
         if($(window).width() <= 900){
             return;
