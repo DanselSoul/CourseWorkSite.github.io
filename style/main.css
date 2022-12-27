@@ -857,6 +857,13 @@ h6{
     display: none;
 }
 
+.initial{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
 
 @media (max-width: 1310px){
     .models{
